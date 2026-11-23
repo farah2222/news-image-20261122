@@ -1,6 +1,6 @@
 // "The World in One Day" — news-image-20261122 entry.
-// The image is the entry.png beside this file; the program copies it to the
-// grader's output directory (or $MAKEFUN_OUTPUT_DIR when run locally).
+// Copies the entry.png beside this file into the grader's output directory
+// ($MAKEFUN_OUTPUT_DIR when run locally, /output otherwise).
 import { copyFileSync, existsSync, mkdirSync, statSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
